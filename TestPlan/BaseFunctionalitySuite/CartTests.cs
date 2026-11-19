@@ -18,8 +18,8 @@ namespace PrestashopTesena.TestPlan
             CartPage = new(Page);
         }
 
-        [TestCase("printed")]
-        [TestCase("framed")]
+        [TestCase("shirt")]
+        [TestCase("sweater")]
         public async Task AddProductToCartAndCheckItThereTest(string searchTerm)
         {
             await IndexPage.SearchAsync(searchTerm);
